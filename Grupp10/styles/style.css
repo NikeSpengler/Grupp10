@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*---övrig text, typsnitt-----*/
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+ /*----- första sidans rubrik, typsnitt -----*/
+div h1{
+    font-family: 'Caveat', cursive;
+}
+
+/* ------- Navigation -----*/
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.btn1:hover{
+    color: darkred;
+    text-decoration: underline;
+}
+
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+/*------- media query for menu, anpassning för mindre skärmar ---------*/
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: lightgoldenrodyellow;
+        width: 100%;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+/*-----färg för text på nedfallande meny på mindre skärmar----*/
+    nav ul li a{
+        color: #555;
+    }
+
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: #555;
+}
+
+p{
+    color: #555;
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.header {
+    background: lightgoldenrodyellow;
+ }
+ 
+ .header .row{
+     margin-top: 100px;
+     margin-right: 40px;
+     padding-right: 25px;
+ }
+
+/*-------Första sidans text och bild-------*/
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+    margin-bottom: 100px;
+}
+
+.col-2 img{
+    max-width: 100%;
+    margin-top: 100px 0;
+    margin-left: 200px;
+    margin-right: 100px;
+
+}
+
+.col-2 h1{
+    font-size: 50px;
+    min-width: 60px;
+    margin: 25px 0;
+}
+
+
+.col-2 p{
+    line-height: 150%; /*radavstånd för första sidans text*/
+}
+
+.btn {
+    display: inline-block;
+    background: white;
+    color:  black;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.btn:hover{
+    background: lightgoldenrodyellow;
+}
+
+
+
+/* ----- Möjliga symboler, kravmärkt mm 3 bilder? ----*/
+.col-3-extra{
+   margin-bottom: 300px;
+   margin-top: 100px;
+   line-height: 150%;
+}
+
+
+.extra{
+    text-align: center; 
+    padding: 40px;
+    background: lightgoldenrodyellow;
+    
+
+}
+.new{
+    font-weight: 600;/*skapar bold tjocklek på text*/
+    line-height: 200%;
+}
+
+.btn2 {
+    display: inline-block;
+    background: lightgoldenrodyellow;
+    color:  darkgrey;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.btn2:hover{
+    color: darkred;
+    text-decoration: underline;
+}
+
+/*------ footer -------*/
+footer{
+    padding: 40px;
+    text-align: center;
+    font-size: small;
+    
+}
+.footer hr{
+    border: 2px;
+    color: #555;
+    height: 3px;
+    margin: 40px 0;
+}
+
+.copyright{
+    text-align: center;
+    font-size: small;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.copyright:before{
+    content: ' \00A9';
+}
+
+
+/* No CSS *//*# sourceMappingURL=style.css.map */

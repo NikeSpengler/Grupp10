@@ -78,51 +78,68 @@
     </div>
     <script>
         arr = [{
+            "Img": "/bilder/Arc 2019.png",
             "Name": "Anfora Arancione",
             "Country": "Japan",
-            "Year": "2018"
+            "Year": "2018",
+            "Price": "170 kr"
         },
         {
+            "Img": "/bilder/Arc 2019.png",
             "Name": "Arc",
             "Country": "Frankrike",
-            "Year": "2019"
+            "Year": "2019",
+            "Price": "190 kr"
         },
         {
+            "Img": "/bilder/Arc 2019.png",
             "Name": "Aromatico Frizzante",
             "Country": "Japan",
-            "Year": "2019"
+            "Year": "2010",
+            "Price": "270 kr"
         },
         {
+            "Img": "/bilder/Arc 2019.png",
             "Name": "B.F.F.",
             "Country": "Sverige",
-            "Year": "2019"
+            "Year": "2016",
+            "Price": "180 kr"
         },
         {
+            "Img": "/bilder/Arc 2019.png",
             "Name": "Anfora Arancione",
             "Country": "Japan",
-            "Year": "2018"
+            "Year": "2020",
+            "Price": "210 kr"
         },
         {
+            "Img": "/bilder/Arc 2019.png",
             "Name": "Arc",
             "Country": "Frankrike",
-            "Year": "2019"
+            "Year": "1986",
+            "Price": "370 kr"
         },
         {
+
+            "Img": "/bilder/Arc 2019.png",
             "Name": "Aromatico Frizzante",
             "Country": "Japan",
-            "Year": "2019"
+            "Year": "2015",
+            "Price": "170 kr"
         },
         {
+            "Img": "/bilder/Arc 2019.png",
             "Name": "B.F.F.",
             "Country": "Sverige",
-            "Year": "2019"
+            "Year": "2019",
+            "Price": "190 kr"
         },
         ];
 
 
         $.each(arr, function (i) {
             var templateString =
-                '<div class="col-sm-2 card mb-4 box-shadow">    <img class="card-img-top" src="./bilder/Arc 2019.png" alt="Card image cap">      <div class="card-body p-0">     <p class="card-text"> </p > </div > <h5>' + arr[i].Name + '</h5> </p> <a href="#" class="btn btn-primary">Köp</a> </div>  </div>';
+                '<div class="col-sm-2 card mb-4 box-shadow">    <img class="card-img-top" src="' + arr[i].Img + '" alt="Card image cap">      <div class="card-body p-0">     <p class="card-text"> </p > </div >  <h5>' + arr[i].Name + '</h5> <h5 class="wine-text">' + arr[i].Country + '</h5><h5>' + arr[i].Year + '</h5><h5>' + arr[i].Price + '</h5></p> <a href="#" class="btn btn-primary">Köp</a> </div>  </div>';
 
             $('#test').append(templateString);
         })

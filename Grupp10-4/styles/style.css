@@ -97,6 +97,11 @@ p{
     transition: background 0.5s;
 }
 
+/*-- Produktsida---*/
+.wine-text{
+    font-size: small;
+}
+
 /*------ footer -------*/
 footer{
     padding: 40px;

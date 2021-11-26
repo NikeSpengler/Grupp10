@@ -35,11 +35,12 @@
 </head>
 
 <body>
-    <!-- Navbar -->
+    <!-- Navigationsmeny -->
     <nav class="navbar navbar-expand-lg bg-transparent navbar-transparent py-3">
         <div class="container">
             <a href="index.html" class="navbar-brand"><img src="./bilder/Grupp10-logo2.png" width="30px"></a>
 
+            <!--hamburgermeny för mindre skärmar-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><img
                     src="./bilder/grupp10-menuicon.jpg" width="30px" alt=""></button>
 
@@ -65,11 +66,11 @@
 
     <header class="produkter-header text-center">
         <div>
-            <h1 class="titel-produkter">Våra Produkter</h1>
+            <h1 class="titel-produkter">Våra produkter</h1>
         </div>
         <br>
         <div>
-            <h4 class="text-produkter">Text om vad vi erbjuder i våra produkter sida</h4>
+            <h4 class="text-produkter">Text om vad vi erbjuder i våra produktsida</h4>
         </div>
     </header>
 
@@ -79,58 +80,58 @@
     <script>
         arr = [{
             "Img": "bilder/Arc 2019.png",
-            "Name": "Arc",
-            "Country": "Frankrike",
-            "Year": "2019",
-            "Price": "170 kr"
-        },
-        {
-            "Img": "bilder/Bubbly 2017.png",
-            "Name": "Bubbly",
-            "Country": "Frankrike",
-            "Year": "2017",
-            "Price": "190 kr"
-        },
-        {
-            "Img": "bilder/B.F.F. 2019.png",
-            "Name": "B.F.F.",
-            "Country": "Sverige",
-            "Year": "2019",
-            "Price": "270 kr"
-        },
-        {
-            "Img": "bilder/Farem Tot Petar 2019.png",
-            "Name": "Farem Tot Petar",
-            "Country": "Frankrike",
-            "Year": "2019",
-            "Price": "180 kr"
-        },
-        {
-            "Img": "bilder/Será Rouge 2014.png",
-            "Name": "Será Rouge",
-            "Country": "Frankrike",
-            "Year": "2014",
-            "Price": "210 kr"
-        },
-        {
-            "Img": "bilder/Rebel Blanc 2019.png",
-            "Name": "Rebel Blanc",
-            "Country": "Frankrike",
-            "Year": "2019",
-            "Price": "370 kr"
-        },
-        {
-
-            "Img": "bilder/Maintenant 2018.png",
-            "Name": "Maintenant",
-            "Country": "Frankrike",
+            "Name": "Anfora Arancione",
+            "Country": "Japan",
             "Year": "2018",
             "Price": "170 kr"
         },
         {
-            "Img": "bilder/La Lanterne Rouge 2019.png",
-            "Name": "La Lanterne Rouge",
+            "Img": "bilder/Arc 2019.png",
+            "Name": "Arc",
             "Country": "Frankrike",
+            "Year": "2019",
+            "Price": "190 kr"
+        },
+        {
+            "Img": "bilder/Arc 2019.png",
+            "Name": "Aromatico Frizzante",
+            "Country": "Japan",
+            "Year": "2010",
+            "Price": "270 kr"
+        },
+        {
+            "Img": "bilder/Arc 2019.png",
+            "Name": "B.F.F.",
+            "Country": "Sverige",
+            "Year": "2016",
+            "Price": "180 kr"
+        },
+        {
+            "Img": "bilder/Arc 2019.png",
+            "Name": "Anfora Arancione",
+            "Country": "Japan",
+            "Year": "2020",
+            "Price": "210 kr"
+        },
+        {
+            "Img": "bilder/Arc 2019.png",
+            "Name": "Arc",
+            "Country": "Frankrike",
+            "Year": "1986",
+            "Price": "370 kr"
+        },
+        {
+
+            "Img": "bilder/Arc 2019.png",
+            "Name": "Aromatico Frizzante",
+            "Country": "Japan",
+            "Year": "2015",
+            "Price": "170 kr"
+        },
+        {
+            "Img": "bilder/Arc 2019.png",
+            "Name": "B.F.F.",
+            "Country": "Sverige",
             "Year": "2019",
             "Price": "190 kr"
         },
@@ -139,7 +140,7 @@
 
         $.each(arr, function (i) {
             var templateString =
-                '<div class="col-sm-2 card mb-4 box-shadow">    <img class="card-img-top" src="' + arr[i].Img + '" alt="Card image cap">      <div class="card-body p-0">     <p class="card-text"> </p > </div >  <h5>' + arr[i].Name + '</h5> <h5 class="wine-text">' + arr[i].Country + '</h5><h5>' + arr[i].Year + '</h5><h5>' + arr[i].Price + '</h5></p> <a href="#" class="btn btn-primary">Köp</a> </div>  </div>';
+                '<div class="col-sm-2 card mb-4 bg-transparent">    <img class="card-img-top" src="' + arr[i].Img + '" alt="Card image cap">      <div class="card-body p-0">     <p class="card-text"> </p > </div >  <h5>' + arr[i].Name + '</h5> <h5 class="wine-text">' + arr[i].Country + '</h5><h5>' + arr[i].Year + '</h5><h5>' + arr[i].Price + '</h5></p> <a href="#" class="btn btn-primary">Köp</a> </div>  </div>';
 
             $('#test').append(templateString);
         })

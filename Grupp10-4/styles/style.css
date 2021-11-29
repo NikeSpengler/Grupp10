@@ -68,6 +68,13 @@ p.my-4{
 .wine-text{
     font-size: small;
 }
+.container {
+        width: 100%;
+        padding: 15px;
+        margin: 20px;
+        align-content: center;
+ }
+
 
 /*---------------------- footer -----------------------*/
 footer{

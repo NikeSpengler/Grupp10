@@ -1,0 +1,130 @@
+
+/*----------------------övrig text, typsnitt-----------------------*/
+body{
+    font-family: 'Work Sans', sans-serif;
+    background-color: lightgoldenrodyellow;
+}
+div.item {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+}
+
+/*---------------------- första sidans rubrik, typsnitt -----------------------*/
+div h1{
+    font-family: 'Caveat', cursive;
+}
+
+/*---------------------- Navigation -----------------------*/
+
+.nav-item{
+    color: black;
+}
+
+.nav-item:hover{
+    color: red;
+}
+
+.btn {
+    display: inline-block;
+    background: white;
+    color:  black;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+/*---------------------- Förstasidan -----------------------*/
+
+/*-- Förstasidans text och bild --*/
+.col-md{
+    padding-top: 150px;
+    padding-bottom: 200px;
+    /*--textmellanrum, fungerar ej!!--*/
+    line-height: 150%;
+}
+
+.img-frontpage{
+    padding-left: 100px;
+}
+
+/*-- förstasidans marginaler över de 3 nyhterna--*/
+.d-sm-flex{
+    padding-top: 50px;
+}
+/*--fetstil på rubriken för nyheterna--*/
+.new{
+    font-weight: 600;
+}
+
+/*--textmellanrum, fungerar ej!!--*/
+p.my-4{
+    line-height: 150%;
+}
+
+/*---------------------- Produktsida -----------------------*/
+.wine-text{
+    font-size: small;
+}
+
+.card-text{
+    font-size: small;
+}
+.container {
+        width: 100%;
+        padding: 15px;
+        margin: 20px;
+        align-content: center;
+ }
+
+/*---------------------- Detaljerad produktsida -----------------------*/
+
+/* ----- bild och tillbakaknapp  */
+#winebottle {
+    margin-bottom: 2%;
+}
+.btn3 {
+    position: relative;
+    left: 25%;
+    margin-top: 0%;
+}
+
+/*---------------------- Om oss -----------------------*/
+
+.text-about{
+    padding-bottom: 300px;
+}
+
+
+/*---------------------- footer -----------------------*/
+footer{
+    padding: 40px;
+    text-align: center;
+    font-size: small;
+    
+}
+.footer hr{
+    border: 2px;
+    color: #555;
+    height: 3px;
+    margin: 40px 0;
+}
+
+.copyright{
+    text-align: center;
+    font-size: small;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.copyright:before{
+    content: ' \00A9';
+}
+
+
+
+
+
+/* No CSS *//*# sourceMappingURL=style.css.map */

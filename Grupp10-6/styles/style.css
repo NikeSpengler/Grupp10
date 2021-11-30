@@ -11,6 +11,9 @@ div.item {
     width: 120px;
 }
 
+.caption {
+        display: block;
+    }
 /*---------------------- första sidans rubrik, typsnitt -----------------------*/
 div h1{
     font-family: 'Caveat', cursive;
@@ -24,9 +27,11 @@ div h1{
 
 .nav-item:hover{
     color: red;
+    text-decoration: underline;
+        cursor: pointer;
 }
 
-.btn {
+.btn.btn-link {
     display: inline-block;
     background: white;
     color:  black;
@@ -70,10 +75,14 @@ p.my-4{
     font-size: small;
 }
 
+.produkter-header .titel-produkter {
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+    }
 .text-produkter{
-    padding-left: 300px;
-    padding-right: 300px;
-    padding-bottom: 50px;
+     text-align: center;
+        margin: 14px 8px;
 
 }
 
@@ -88,15 +97,19 @@ p.my-4{
 
 /*---------------------- Detaljerad produktsida -----------------------*/
 
-/* ----- bild och tillbakaknapp  */
-#winebottle {
-    margin-bottom: 2%;
-}
-.btn3 {
-    position: relative;
-    left: 25%;
-    margin-top: 0%;
-}
+
+.winbottle {
+        align-items: center;
+    }
+    
+    .caption {
+        text-align: left;
+        background-color: #ffffff;
+        margin: 20px 100px 50px 100px;
+        padding: 50px 50px 50px 50px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .5)
+    }
 
 /*---------------------- Om oss -----------------------*/
 

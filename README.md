@@ -6,6 +6,6 @@ Goda Viner
 En hemsida för goda viner.
 
 Skapad av:
-Daniel Naesenius
-Marija Rubil
+Daniel Naesenius,
+Marija Rubi och
 Nike Spengler

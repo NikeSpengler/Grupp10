@@ -1,0 +1,179 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /*---övrig text, typsnitt-----*/
+    
+    body {
+        font-family: 'Work Sans', sans-serif;
+        background-color: lightgoldenrodyellow;
+    }
+    
+    div.item {
+        vertical-align: top;
+        display: inline-block;
+        text-align: center;
+        width: 120px;
+    }
+    
+    .caption {
+        display: block;
+    }
+    /*----- första sidans rubrik, typsnitt -----*/
+    
+    div h1 {
+        font-family: 'Caveat', cursive;
+    }
+    /* ------- Navigation -----*/
+    
+    .navbar {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    nav {
+        flex: 1;
+        text-align: right;
+    }
+    
+    nav ul {
+        display: inline-block;
+        list-style-type: none;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+    
+    .nav-item:hover {
+        color: darkred;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    
+    bg-light:hover {
+        color: darkred !important;
+    }
+    
+    .menu-icon {
+        width: 28px;
+        margin-left: 20px;
+        display: none;
+    }
+    /*-----färg för text på nedfallande meny på mindre skärmar----*/
+    
+    nav ul li a {
+        color: #555;
+    }
+    
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #555;
+    }
+    
+    p {
+        color: #555;
+    }
+    
+    .header {
+        background: lightgoldenrodyellow;
+    }
+    
+    .header .row {
+        margin-top: 100px;
+        margin-right: 40px;
+        padding-right: 25px;
+    }
+    
+    .btn {
+        display: inline-block;
+        background: white;
+        color: black;
+        padding: 8px 30px;
+        margin: 30px 0;
+        border-radius: 30px;
+        transition: background 0.5s;
+    }
+    /*-- Produkter sida---*/
+    
+    .wine-text {
+        font-size: small;
+    }
+    
+    .produkter-header .titel-produkter {
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    .text-produkter {
+        text-align: center;
+        margin: 14px 8px;
+    }
+    
+    .card {
+        margin: 15px 10px 15px;
+    }
+    
+    .line {
+        border: 0;
+        height: 1px;
+    }
+    
+    .btn-primary {
+        color: #11324D;
+        background-color: #C1CFC0;
+        border-color: #C1CFC0;
+    }
+    
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-primary:active,
+    .btn-primary.active,
+    .open>.dropdown-toggle.btn-primary {
+        color: #11324D;
+        background-color: #6B7AA1;
+        border-color: #6B7AA1;
+    }
+    
+    .container {
+        width: 100%;
+        padding: 15px;
+        margin: 20px;
+        align-content: center;
+    }
+    /*------ footer -------*/
+    
+    footer {
+        padding: 40px;
+        text-align: center;
+        font-size: small;
+    }
+    
+    .footer hr {
+        border: 2px;
+        color: #555;
+        height: 3px;
+        margin: 40px 0;
+    }
+    
+    .copyright {
+        text-align: center;
+        font-size: small;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    
+    .copyright:before {
+        content: ' \00A9';
+    }
+    /* No CSS */
+    /*# sourceMappingURL=style.css.map */

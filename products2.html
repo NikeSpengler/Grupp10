@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- Första sidans rubrik, typsnitt -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <!-- Övrig text, typsnitt -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Import for BootStrap support -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- test bootstrap och js-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Produktsida</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-light navbar-expand-lg bg-transparent navbar-transparent py-3">
+        <div class="container">
+            <a href="index.html" class="navbar-brand"><img src="./bilder/Grupp10-logo2.png" width="30px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><img
+                    src="./bilder/grupp10-menuicon.jpg" width="30px" alt=""></button>
+            <div class=" collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="products2.html" class="nav-link">Produkter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">Om oss</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Kontakt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#cart" class="nav-link">Varukorg(0)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="produkter-header text-center">
+        <div>
+            <h1 class="titel-produkter">Våra Produkter</h1>
+        </div>
+        <br>
+        <div>
+            <h4 class="text-produkter">Text om vad vi erbjuder i våra produkter sida</h4>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row" id="test"></div>
+    </div>
+    <script>
+        arr = [{
+            "Img": "bilder/Arc 2019.png",
+            "Name": "Arc",
+            "Country": "Frankrike",
+            "Year": "2019",
+            "Price": "170 kr"
+        }, {
+            "Img": "bilder/Bubbly 2017.png",
+            "Name": "Bubbly",
+            "Country": "Frankrike",
+            "Year": "2017",
+            "Price": "190 kr"
+        }, {
+            "Img": "bilder/B.F.F. 2019.png",
+            "Name": "B.F.F.",
+            "Country": "Sverige",
+            "Year": "2019",
+            "Price": "270 kr"
+        }, {
+            "Img": "bilder/Farem Tot Petar 2019.png",
+            "Name": "Farem Tot Petar",
+            "Country": "Frankrike",
+            "Year": "2019",
+            "Price": "180 kr"
+        }, {
+            "Img": "bilder/Será Rouge 2014.png",
+            "Name": "Será Rouge",
+            "Country": "Frankrike",
+            "Year": "2014",
+            "Price": "210 kr"
+        }, {
+            "Img": "bilder/Rebel Blanc 2019.png",
+            "Name": "Rebel Blanc",
+            "Country": "Frankrike",
+            "Year": "2019",
+            "Price": "370 kr"
+        }, {
+
+            "Img": "bilder/Maintenant 2018.png",
+            "Name": "Maintenant",
+            "Country": "Frankrike",
+            "Year": "2018",
+            "Price": "170 kr"
+        }, {
+            "Img": "bilder/La Lanterne Rouge 2019.png",
+            "Name": "La Lanterne Rouge",
+            "Country": "Frankrike",
+            "Year": "2019",
+            "Price": "190 kr"
+        }, ];
+        $.each(arr, function(i) {
+            var templateString =
+                '<div class="col-sm-2 card mb-4 box-shadow">    <img class="card-img-top" src="' + arr[i].Img + '" alt="Card image cap">      <div class="card-body p-0">     <p class="card-text"> </p > </div >  <h5>' + arr[i].Name + '</h5> <h5 class="wine-text">' + arr[i].Country + '</h5><h5>' + arr[i].Year + '</h5><h5>' + arr[i].Price + '</h5></p> <a href="#" class="btn btn-primary">Köp</a> </div>  </div>';
+            $('#test').append(templateString);
+        })
+    </script>
+    <!-- Footer -->
+    <hr size="1" color="black">
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <div class="col-3-footer">
+                    <p class="copyright"> Copyright 2021 - Goda Viner</p>
+                </div>
+                <div id="contact" class="col-3-footer">
+                    <p>Goda Viner</p>
+                    <p>Ringvägen 177, 112 54 Halmstad</p>
+                    <p>godaviner@hello.se</p>
+                </div>
+                <div class="col-3-footer">
+                    <img src="./bilder/insta-icon.png" class="fb-icon" width="30px" height="30px">
+                    <img src="./bilder/fb-icon.png" class="insta-icon" width="30px" height="30px">
+                    <img src="./bilder/Twitter-icon.png" class="twitter-icon" width="30px" height="30px">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
